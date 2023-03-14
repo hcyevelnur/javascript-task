@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Alisveris</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="apple-touch-icon" href="shop/img/apple-icon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="shop/img/favicon.ico">
+    <link rel="stylesheet" href="shop/css/bootstrap.min.css">
+    <link rel="stylesheet" href="shop/css/templatemo.css">
+    <link rel="stylesheet" href="shop/css/custom.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
+    <link rel="stylesheet" href="shop/css/fontawesome.min.css">
+    <link rel="icon" type="image/x-icon" href="./istockphoto-544330072-612x612.jpeg">
+    <link rel="stylesheet" type="text/css" href="shop/css/slick.min.css">
+    <link rel="stylesheet" type="text/css" href="shop/css/slick-theme.css">
+</head>
+<body>
+                <div style="display: flex; justify-content: center; padding-top: 50px;">
+                    <div class="group">      
+                        <input id="product-name" type="text" required>
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label>Məhsulun adı</label>
+                      </div>
+                      <div class="group" style="margin-left:10px;">      
+                        <input id="product-price" type="text" required>
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label>Məhsulun qiyməti</label>
+                      </div>
+                </div>
+
+                <div style="display: flex;justify-content: center;">
+
+                    <div class="container-2">
+
+                        <a href="./index.html" class="button">
+                          <div class="button__line"></div>
+                          <div class="button__line"></div>
+                          <span
+                          class="button__text">Əsas Səhifə</span>
+                          <div class="button__drow1"></div>
+                          <div class="button__drow2"></div>
+                        </a>
+                      
+                      </div>
+
+                <div class="container-2"  style="margin-left: 50px;">
+
+                    <a href="#" class="button">
+                      <div class="button__line"></div>
+                      <div class="button__line"></div>
+                      <span id="add-product"
+                      class="button__text">Əlavə et</span>
+                      <div class="button__drow1"></div>
+                      <div class="button__drow2"></div>
+                    </a>
+                  
+                  </div>
+                </div>
+    <br>
+    <div id="product-list"></div>
+    <h3 style="text-align: center;">Sifarişin ümumi qiyməti: <span id="total-price">0.00</span> AZN</h3>
+    <br>
+
+
+
+    <script src="./main.js"></script>
+    <script src="shop/js/jquery-1.11.0.min.js"></script>
+    <script src="shop/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="shop/js/bootstrap.bundle.min.js"></script>
+    <script src="shop/js/templatemo.js"></script>
+    <script src="shop/js/custom.js"></script>
+
+    <script src="shop/js/slick.min.js"></script>
+    <script>
+        $('#carousel-related-product').slick({
+            infinite: true,
+            arrows: false,
+            slidesToShow: 4,
+            slidesToScroll: 3,
+            dots: true,
+            responsive: [{
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 3
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 3
+                    }
+                }
+            ]
+        });
+    </script>
+
+</body>
+
+</html>
